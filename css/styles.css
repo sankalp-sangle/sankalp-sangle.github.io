@@ -44,12 +44,14 @@ font-size: 300%;
     position: absolute;
     right:5%;
     width: 15%;
+    transform: scale(-1,1);
 }
 
 .bottomcloud {
     position: absolute;
     left:5%;
     width: 15%;
+    /* transform: scale(-1,1); */
     /* display: inline; */
     /* right: 20%;
     top: 50px; */
