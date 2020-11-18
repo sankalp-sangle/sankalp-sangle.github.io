@@ -177,12 +177,13 @@ hr {
 }
 
 .contact-message {
-    width: 40%;
     margin: 40px auto 60px;
 }
 
 .contact-me {
+    width: 60%;
     padding-bottom: 50px;
+    margin: 0 auto;
 }
 
 .copyright {
