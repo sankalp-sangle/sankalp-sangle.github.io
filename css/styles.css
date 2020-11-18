@@ -42,13 +42,13 @@ font-size: 300%;
 
 .topcloud {
     position: absolute;
-    right:10%;
+    right:5%;
     width: 15%;
 }
 
 .bottomcloud {
     position: absolute;
-    left:10%;
+    left:5%;
     width: 15%;
     /* display: inline; */
     /* right: 20%;
