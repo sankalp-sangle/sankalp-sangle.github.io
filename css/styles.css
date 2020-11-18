@@ -102,20 +102,20 @@ font-size: 300%;
     /* float: left; */
 }
 
-.Pilani {
-    width: 22%;
+.Pilani_img {
+    width: 16%;
+    min-width: 120px;
     /* float: left; */
-    transform: rotate(90deg);
     /* margin-right: 30px; */
+    /* margin: auto auto auto auto; */
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-.skill-row {
-    width: 60%;
-    margin: 100px auto 100px;
-    text-align: left;
-    line-height: 2;
-    /* display: table; */
+.Pilani {
+    text-align: center;
 }
+
 
 .cisco-img {
     float: left;
@@ -142,11 +142,12 @@ h3 {
 }
 
 .drawing {
+    /* width: 600px; */
     width:50%;
 }
 
 .profile-pic {
-    width: 50%;
+    width: 55%;
 }
 
 .AND {
