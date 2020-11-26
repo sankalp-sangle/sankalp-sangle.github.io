@@ -86,16 +86,12 @@ font-size: 300%;
     /* font-size: 85%; */
 }
 
-.profile {
-    padding-top: 50px;
-    width:50%;
-    margin: 0 auto 0;
-}
+
 
 .BITSID {
     /* transform: rotate(-20deg); */
     /* margin-top: 20px; */
-    height: 2em;
+    width: 70%;
     /* margin: 0; */
     /* float: right; */
     /* position: absolute; */
@@ -105,54 +101,29 @@ font-size: 300%;
 }
 
 .Pilani_img {
-    width: 16%;
-    min-width: 120px;
+    width: 35%;
+    /* min-width: 120px; */
     /* float: left; */
     /* margin-right: 30px; */
     /* margin: auto auto auto auto; */
-    text-align: center;
-    padding-bottom: 40px;
+    /* text-align: center; */
+    /* padding-bottom: 40px; */
 }
 
 .Pilani {
-    margin-top:3em;
-    text-align: center;
+    /* margin-top:3em; */
 }
 
 
-.left-img {
-    float: left;
-    width: 14em;
-    /* height: 10em; */
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
 
-.right-img {
-    float: right;
-    width: 14em;
-    margin-left: 30px;
-    /* display: inline; */
-    margin-bottom: 20px;
-}
 
 h3 {
     color: #07689f;
 }
 
-.profile-desc {
-    width:75%;
-    margin: 0 auto 50px;
-}
 
-.drawing {
-    /* width: 600px; */
-    width:50%;
-}
 
-.profile-pic {
-    width: 55%;
-}
+
 
 .AND {
     font-family: 'Dancing Script', cursive;
@@ -163,12 +134,7 @@ h3 {
     /* margin-left: 2em; */
 }
 
-.experience-row {
-    width: 50%;
-    margin: 100px auto 100px;
-    text-align: left;
-    line-height: 2;
-}
+
 
 p {
     line-height: 2;
@@ -177,7 +143,7 @@ p {
 hr {
     border: dotted #ff7e67 6px;
     border-bottom: none;
-    width: 5%;
+    width: 15%;
     margin: 7% auto;
 }
 
@@ -185,11 +151,6 @@ hr {
     margin: 40px auto 60px;
 }
 
-.contact-me {
-    width: 60%;
-    padding-bottom: 50px;
-    margin: 0 auto;
-}
 
 .copyright {
     color: #EAF6F6;
@@ -249,4 +210,120 @@ a:hover {
 
   .devanagri {
     font-family: 'Kalam', cursive;
+  }
+
+  .profile {
+    padding-top: 50px;
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
+    width: 50%;
+  }
+
+  .profile-desc {
+    width:75%;
+    margin: 0 auto;
+}
+
+.left-img, .right-img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.experience-row {
+    width: 100%;
+    margin: 50px auto 50px;
+    line-height: 2;
+}
+
+.exp-desc {
+    width: 75%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contact-me {
+    width: 75%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+  @media only screen and (orientation: landscape) {
+    .exp-desc {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .profile {
+        padding-top: 50px;
+        width:50%;
+        margin: 0 auto 0;
+    }
+
+    .left-img {
+        float: left;
+        width: 14em;
+        /* height: 10em; */
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .right-img {
+        float: right;
+        width: 14em;
+        margin-left: 30px;
+        /* display: inline; */
+        margin-bottom: 20px;
+    }
+
+    .profile-desc {
+        width:75%;
+        margin: 0 auto 50px;
+    }
+
+    .drawing {
+        /* width: 600px; */
+        width:70%;
+    }
+    
+    .profile-pic {
+        width: 70%;
+    }
+
+    .experience-row {
+        width: 50%;
+        margin: 100px auto 100px;
+        text-align: left;
+        line-height: 2;
+    }
+
+    .contact-me {
+        width: 60%;
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    hr {
+        border: dotted #ff7e67 6px;
+        border-bottom: none;
+        width: 5%;
+        margin: 7% auto;
+    }
+
+    .BITSID {
+        width: 70%;
+        margin:0 auto;
+    }
+    
+    .Pilani_img {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .Pilani {
+        text-align: center;
+    }
+    
   }
