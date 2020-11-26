@@ -115,23 +115,25 @@ font-size: 300%;
 }
 
 .Pilani {
+    margin-top:3em;
     text-align: center;
 }
 
 
-.cisco-img {
+.left-img {
     float: left;
-    width: 12em;
+    width: 14em;
     /* height: 10em; */
     margin-right: 30px;
-    
+    margin-bottom: 20px;
 }
 
-.bits-img {
+.right-img {
     float: right;
-    width: 12em;
+    width: 14em;
     margin-left: 30px;
     /* display: inline; */
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -161,7 +163,7 @@ h3 {
     /* margin-left: 2em; */
 }
 
-.skill-row {
+.experience-row {
     width: 50%;
     margin: 100px auto 100px;
     text-align: left;
@@ -204,6 +206,18 @@ a {
 
 a:hover {
     color : #eeeeee;
+}
+
+.bishopslink {
+    margin:0;
+    color : #00adb5;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+.bishopslink:hover {
+    color : #ff7e67;
+
 }
 
 .btn {
