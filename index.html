@@ -1,218 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="favicon.jpg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 
-    <title>Sankalp Sangle</title>
-  </head>
-  <body>
-    <div class="top">
-      <img class="topcloud" src="img/Cloudy.svg" alt="cloud-img" />
-      <!-- <img class="bottomcloud" src="Cloud.svg" alt="cloud-img" width="200px" /> -->
-      <h1 class="Header">I'm <br> Sankalp / <span class="devanagri">संकल्प</span>,</h1>
-      <p class="Header-footer">and I'm a programmer.</p>
-      <img class="bottomcloud" src="img/Cloudy.svg" alt="cloud-img" />
-      <br />
-      <!-- <img class="BITSID" src="ID.svg" alt="" /> -->
-      <!-- <img class="Pilani" src="Pilani.svg" alt=""/> -->
-      <img class="drawing" src="img/drawing.svg" alt="mountain-img" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <title>Sankalp Sangle</title>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <nav>
+      <a class="section"
+        style="font-family: 'Open Sans', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #00416d;"
+        href="#top_id">Back to Top</a>
+      <a class="section" href="#contact-me-id">Contact</a>
+    </nav>
+    <a class="section"
+      href="https://drive.google.com/file/d/1lgqlphWuLiOqbSjHYRVDTA3l31QkOVeY/view?usp=sharing">Resume</a>
+    <nav>
+      <a class="section" href="#educationandexperiences">Education and Experiences</a>
+      <a class="section" href="#about">About</a>
+    </nav>
+    <a class="section" href="javascript:void(0);" id="burgerbars" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <h4 style="font-family: 'Abril Fatface', cursive; color:#364f6b; float:left; font-size:125%; margin-left:2%;">
+      Sankalp Sangle</h>
+  </div>
+
+
+  <div class="top" id="top_id">
+    <!-- <img class="topcloud" src="img/Cloudy.svg" alt="cloud-img" /> -->
+    <!-- <img class="bottomcloud" src="Cloud.svg" alt="cloud-img" width="200px" /> -->
+    <h1 class="Header">I'm<br> Sankalp / <span class="devanagri">संकल्प</span>,</h1>
+    <p class="Header-footer">and I'm a programmer.</p>
+    <!-- <img class="bottomcloud" src="img/Cloudy.svg" alt="cloud-img" /> -->
+    <br />
+    <!-- <img class="BITSID" src="ID.svg" alt="" /> -->
+    <!-- <img class="Pilani" src="Pilani.svg" alt=""/> -->
+    <img class="drawing" src="img/drawing.svg" alt="mountain-img" />
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="img/circle-cropped.png" class="profile-pic" id="about" />
+      <h2>Hi there!</h2>
+      <p class="profile-desc">
+        I am an incoming graduate student at the Georgia Institute of Technology! Earlier, I was a
+        software engineer at Cisco Systems, Bengaluru. <br />I was
+        brought up in the historic city of Pune, erstwhile Poona, a bustling
+        metro in Maharashtra, India.
+        <br />
+        I love meddling with all things Computer Science, distributed systems,
+        Chess, and Football!
+      </p>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="img/circle-cropped.png" class="profile-pic" />
-        <h2>Hi there!</h2>
-        <p class="profile-desc">
-          I am an incoming graduate student at the Georgia Institute of Technology! Earlier, I was a
-          software engineer at Cisco Systems, Bengaluru. <br />I was
-          brought up in the historic city of Pune, erstwhile Poona, a bustling
-          metro in Maharashtra, India.
-          <br />
-          I love meddling with all things Computer Science, distributed systems,
-          Chess, and Football!
-        </p>
+    <hr />
+    <div class="skills" id="educationandexperiences">
+      <h2>Education and Experiences</h2>
+
+      <div class="experience-row">
+
+        <img class="left-img" src="img/gatech.svg" alt="" />
+        <div class="exp-desc">
+          <h3>
+            Master's in Computer Science @ Georgia Tech <br /><span class="date">[August 2021 - Present]</span>
+          </h3>
+          <p>
+            Here's to new beginnings! I have been admitted to Georgia Institute of
+            Technology in Atlanta, United States for my MS degree in Computer Science. I intend to do a
+            specialization in Computing Systems and will begin term in Fall of 2021.
+            Looking forward to life at Tech, and to see where it takes me!
+          </p>
+        </div>
+
       </div>
-      <hr />
-      <div class="skills">
-        <h2>Education and Experiences</h2>
 
-        <div class="experience-row">
-          
-          <img class="left-img" src="img/gatech.svg" alt="" />
-          <div class="exp-desc">
-            <h3>
-              Master's in Computer Science @ Georgia Tech <br /><span class="date"
-                >[August 2021 - Present]</span
-              >
-            </h3>
-            <p>
-              Here's to new beginnings! I have been admitted to Georgia Institute of
-              Technology in Atlanta, United States for my MS degree in Computer Science. I intend to do a 
-              specialization in Computing Systems and will begin term in Fall of 2021.
-              Looking forward to life at Tech, and to see where it takes me!
-            </p>
-          </div>
-          
+      <div class="experience-row">
+        <img class="right-img" src="img/cisco.svg" alt="" />
+        <div class="exp-desc">
+          <h3>
+            Software Engineer, Cloud and Network Security @ Cisco<br /><span class="date">
+              [August 2020 - May 2021]</span>
+          </h3>
+          <p>
+            I was a software engineer at Cisco Systems, where I worked on the
+            Intrusion Prevention System system Snort3 and interacted daily with
+            an extraordinarily knowledgable and helpful group of people!
+          </p>
         </div>
-        
-        <div class="experience-row">
-          <img class="right-img" src="img/cisco.svg" alt=""/>
-          <div class="exp-desc">
-            <h3>
-              Software Engineer, Cloud and Network Security @ Cisco<br /><span
-                class="date"
-              >
-                [August 2020 - May 2021]</span
-              >
-            </h3>
-            <p>
-              I was a software engineer at Cisco Systems, where I worked on the
-              Intrusion Prevention System system Snort3 and interacted daily with 
-              an extraordinarily knowledgable and helpful group of people!
-            </p>
-          </div>
+      </div>
+
+      <div class="experience-row">
+
+        <img class="left-img" src="img/nus.png" alt="" />
+        <div class="exp-desc">
+          <h3>
+            Research Intern, School of Computing, NUS Singapore <br /><span class="date">[January 2020 - June
+              2020]</span>
+          </h3>
+          <p>
+            I conducted my undergraduate thesis on detecting data center faults using network visualization
+            at the Systems and Networking group under Professor Chan Mun Choon. Singapore is a fantastic place,
+            and my only regret is getting just a little over 2 months to explore it before CoViD struck 🙁.
+            <a class="mylink" href="https://github.com/sankalp-sangle/FlaskDebugger">Here's a link</a> to the GitHub
+            repository that documents my work! <br />
+          </p>
         </div>
 
-        <div class="experience-row">
-          
-          <img class="left-img" src="img/nus.png" alt="" />
-          <div class="exp-desc">
-            <h3>
-              Research Intern, School of Computing, NUS Singapore <br /><span class="date"
-                >[January 2020 - June 2020]</span
-              >
-            </h3>
-            <p>
-              I conducted my undergraduate thesis on detecting data center faults using network visualization
-              at the Systems and Networking group under Professor Chan Mun Choon. Singapore is a fantastic place,
-              and my only regret is getting just a little over 2 months to explore it before CoViD struck 🙁.
-              <a class="mylink" href="https://github.com/sankalp-sangle/FlaskDebugger">Here's a link</a> to the GitHub
-              repository that documents my work! <br />            
-            </p>
-          </div>
-          
-
-          
-        </div>
-
-
-
-        <div class="experience-row">
-          <img class="right-img" src="img/intern.jpg" alt=""/>
-          <div class="exp-desc">
-            <h3>
-              Engineering Intern, Cloud and Network Security @ Cisco <br /><span
-                class="date"
-              >
-                [May 2019 - July 2019]</span
-              >
-            </h3>
-            <p>
-              I worked on Firewall health monitoring and alerts as an intern in Summer 2019! I am extremely proud that my
-              work went into production with Health and Monitoring now a feature of Cisco's Next-Gen Firewalls.
-              It was a bittersweet summer as Arsenal lost the Europa League final. Still, Cisco and Bengaluru were brilliant to me,
-               and I converted my internship into a full-time offer!
-            </p>
-          </div>
-          
-        </div>
-
-
-
-        <div class="experience-row">
-          
-          <img class="left-img" src="img/bits.png" alt="" />
-          <div class="exp-desc">
-            <h3>
-              Undergrad in Computer Science @ BITS Pilani <br /><span class="date"
-                >[August 2016 - July 2020]</span
-              >
-            </h3>
-            <p>
-              I spent 4 memorable years at Birla
-              Institute of Technology and Science, a premier engineering college
-              in picturesque Pilani! At BITS, I was the coordinator of the Department of
-              Stage Controls, a body responsible for planning and logistics of Auditorium events during Oasis.
-              I was also a member of ACM, BITS Pilani chapter, and the college football team.<br>
-              A few lines are not enough to show my gratitude, but I came here looking for Copper, and I found Gold.
-            </p>
-          </div>
-          
-          <div class="Pilani">
-            <img class="Pilani_img" src="img/Pilani.svg" alt="" /> <br>
-            <img class="BITSID" src="img/ID.svg" alt="" />
-            <br>
-            <span>My BITS ID!</span
-              >
-          </div>
-          
-        </div>
-
-        <div class="experience-row">
-          
-          <img class="right-img" src="img/bishops.png" alt="" />
-          <div class="exp-desc">
-            <h3>
-              12 years at The Bishop's School, Pune <br /><span class="date"
-                >[June 2002 - May 2014]</span
-              >
-            </h3>
-            <p> I did my class X ICSE at Bishop's, a school steeped in tradition in the beautiful Army Cantonment
-              area of Pune. I was a member of the Harding House and the school football teams.
-              Bishop's, along with BITS, has had the biggest contribution in shaping me into who I am today. <br>
-              <a class="mylink" href="https://www.youtube.com/watch?v=ERLp_aZaaas&t=159s">Here's my speech</a> from our graduation and farewell ceremony in February 2014.<br />
-              
-            </p>
-          </div>
-          
-        </div>
 
 
       </div>
-      <hr />
-      <div class="contact-me">
-        <h2>Get In Touch!</h2>
-        <h3>If you share any of my interests, ❤️ Arsenal football club, or wish to tell me how to improve this website! 😄</h3>
-        <p class="contact-message">
-          I'd prefer mail or LinkedIn, but feel free to reach out on other platforms below!
-        </p>
-        <a class="btn" href="mailto:sankalpsangle98@gmail.com">MAIL ME</a>
-      </div>
-    </div>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/sankalp-sangle"
-        >LinkedIn</a
-      >
-      <a class="footer-link" href="https://github.com/sankalp-sangle">GitHub</a>
-      <a class="footer-link" href="https://twitter.com/sangle_sankalp"
-        >Twitter</a
-      >
-      <a class="footer-link" href="https://www.instagram.com/sankalpsangle/?hl=en"
-        >Instagram</a
-      >
-      <a class="footer-link" href="https://lichess.org/@/GunnerBoi">Lichess</a>
-      <p class="copyright">© 2020 Sankalp Sangle.</p>
+
+
+      <div class="experience-row">
+        <img class="right-img" src="img/intern.jpg" alt="" />
+        <div class="exp-desc">
+          <h3>
+            Engineering Intern, Cloud and Network Security @ Cisco <br /><span class="date">
+              [May 2019 - July 2019]</span>
+          </h3>
+          <p>
+            I worked on Firewall health monitoring and alerts as an intern in Summer 2019! I am extremely proud that my
+            work went into production with Health and Monitoring now a feature of Cisco's Next-Gen Firewalls.
+            It was a bittersweet summer as Arsenal lost the Europa League final. Still, Cisco and Bengaluru were
+            brilliant to me,
+            and I converted my internship into a full-time offer!
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <div class="experience-row">
+
+        <img class="left-img" src="img/bits.png" alt="" />
+        <div class="exp-desc">
+          <h3>
+            Undergrad in Computer Science @ BITS Pilani <br /><span class="date">[August 2016 - July 2020]</span>
+          </h3>
+          <p>
+            I spent 4 memorable years at Birla
+            Institute of Technology and Science, a premier engineering college
+            in picturesque Pilani! At BITS, I was the coordinator of the Department of
+            Stage Controls, a body responsible for planning and logistics of Auditorium events during Oasis.
+            I was also a member of ACM, BITS Pilani chapter, and the college football team.<br>
+            A few lines are not enough to show my gratitude, but I came here looking for Copper, and I found Gold.
+          </p>
+        </div>
+
+        <div class="Pilani">
+          <img class="Pilani_img" src="img/Pilani.svg" alt="" /> <br>
+          <img class="BITSID" src="img/ID.svg" alt="" />
+          <br>
+          <span>My BITS ID!</span>
+        </div>
+
+      </div>
+
+      <div class="experience-row">
+
+        <img class="right-img" src="img/bishops.png" alt="" />
+        <div class="exp-desc">
+          <h3>
+            12 years at The Bishop's School, Pune <br /><span class="date">[June 2002 - May 2014]</span>
+          </h3>
+          <p> I did my class X ICSE at Bishop's, a school steeped in tradition in the beautiful Army Cantonment
+            area of Pune. I was a member of the Harding House and the school football teams.
+            Bishop's, along with BITS, has had the biggest contribution in shaping me into who I am today. <br>
+            <a class="mylink" href="https://www.youtube.com/watch?v=ERLp_aZaaas&t=159s">Here's my speech</a> from our
+            graduation and farewell ceremony in February 2014.<br />
+
+          </p>
+        </div>
+
+      </div>
+
+
     </div>
-  </body>
+    <hr />
+    <div class="contact-me" id="contact-me-id">
+      <h2>Get In Touch!</h2>
+      <h3>If you share any of my interests, ❤️ Arsenal football club, or wish to tell me how to improve this website! 😄
+      </h3>
+      <p class="contact-message">
+        I'd prefer mail (sankalpsangle98@gmail.com) or LinkedIn, but feel free to reach out on other platforms below!
+      </p>
+      <a class="btn" href="mailto:sankalpsangle98@gmail.com">MAIL ME</a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/sankalp-sangle">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/sankalp-sangle">GitHub</a>
+    <a class="footer-link" href="https://twitter.com/sangle_sankalp">Twitter</a>
+    <a class="footer-link" href="https://www.instagram.com/sankalpsangle/?hl=en">Instagram</a>
+    <a class="footer-link" href="https://lichess.org/@/GunnerBoi">Lichess</a>
+    <p class="copyright">© 2020 Sankalp Sangle.</p>
+  </div>
+
+  <script>
+    $("nav").find("a").click(function (e) {
+      myFunction()
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(section).offset().top - 100
+      });
+    });
+
+    function myFunction() {
+      if (window.innerHeight > window.innerWidth) {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        }
+        else {
+          x.className = "topnav";
+        }
+      }
+    }
+  </script>
+
+</body>
+
 </html>
