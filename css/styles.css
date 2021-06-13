@@ -169,14 +169,14 @@ a:hover {
     color : #eeeeee;
 }
 
-.bishopslink {
+.mylink {
     margin:0;
     color : #00adb5;
     font-family: 'Merriweather', serif;
     text-decoration: none;
 }
 
-.bishopslink:hover {
+.mylink:hover {
     color : #ff7e67;
 
 }
