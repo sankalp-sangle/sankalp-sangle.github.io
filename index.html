@@ -32,8 +32,8 @@
         href="#top_id">Back to Top</a>
       <a class="section" href="#contact-me-id">Contact</a>
     </nav>
-    <a class="section"
-      href="https://drive.google.com/file/d/1lgqlphWuLiOqbSjHYRVDTA3l31QkOVeY/view?usp=sharing">Resume / CV</a>
+    <a class="section" href="https://drive.google.com/file/d/1lgqlphWuLiOqbSjHYRVDTA3l31QkOVeY/view?usp=sharing">Resume
+      / CV</a>
     <nav>
       <a class="section" href="#educationandexperiences">Education and Experiences</a>
       <a class="section" href="#about">About</a>
@@ -210,13 +210,19 @@
   </div>
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/sankalp-sangle"> <img class="footerlogo" src="img/linkedin.svg"> </a>
-    <a class="footer-link" href="https://github.com/sankalp-sangle"> <img style="background-color: white;border-radius: 1.2em;" class="footerlogo" src="img/github.svg"> </a>
-    <a class="footer-link" href="https://www.instagram.com/sankalpsangle/?hl=en"> <img class="footerlogo" src="img/instagram.svg"> </a>
+    <a class="footer-link" href="https://www.linkedin.com/in/sankalp-sangle"> <img class="footerlogo"
+        src="img/linkedin.svg"> </a>
+    <a class="footer-link" href="https://github.com/sankalp-sangle"> <img
+        style="background-color: white;border-radius: 1.2em;" class="footerlogo" src="img/github.svg"> </a>
+    <a class="footer-link" href="https://www.instagram.com/sankalpsangle/?hl=en"> <img class="footerlogo"
+        src="img/instagram.svg"> </a>
     <a class="footer-link" href="https://sankalpsangle.medium.com/"> <img class="footerlogo" src="img/medium.svg"></a>
-    <a class="footer-link" href="https://lichess.org/@/GunnerBoi"> <img style="background-color: white;border-radius: 1.4em;" class="footerlogo" src="img/lichess.svg"></a>
-    <a class="footer-link" href="https://www.facebook.com/sankalp.sangle/"> <img class="footerlogo" src="img/facebook.svg"></a>
-    <a class="footer-link" href="https://twitter.com/sangle_sankalp"> <img class="footerlogo" src="img/twitter.svg"> </a>
+    <a class="footer-link" href="https://lichess.org/@/GunnerBoi"> <img
+        style="background-color: white;border-radius: 1.4em;" class="footerlogo" src="img/lichess.svg"></a>
+    <a class="footer-link" href="https://www.facebook.com/sankalp.sangle/"> <img class="footerlogo"
+        src="img/facebook.svg"></a>
+    <a class="footer-link" href="https://twitter.com/sangle_sankalp"> <img class="footerlogo" src="img/twitter.svg">
+    </a>
     <p class="copyright">© 2020 Sankalp Sangle.</p>
   </div>
 
@@ -241,6 +247,19 @@
         }
       }
     }
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("myTopnav").style.top = "0";
+      } else {
+        var pullUp = document.getElementById("myTopnav").offsetHeight;
+        document.getElementById("myTopnav").style.top = "-" + pullUp.toString() +"px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
   </script>
 
 </body>
