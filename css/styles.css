@@ -9,8 +9,6 @@ body {
   background-color: #00adb5;
   position: fixed;
   width: 100%;
-  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
-  /* z-index:2; */
 }
 
 .topnav.responsive #burgerbars {
@@ -37,19 +35,12 @@ body {
 }
 
 .top {
-  /* background-color: #fafafa; */
-  /* background-color: #eeeeee; */
-  /* background-color: #f7fbfc; */
   background-color: #303841;
-  /* background-color: #dae1e7; */
   padding: 2%;
-  /* height: 500px; */
 }
 
 .Header {
-  /* color: #ff7e67; */
   color: #e49000;
-  /* color: #ff5722; */
   width: 80%;
   margin-top: 20%;
   margin-left: auto;
@@ -57,102 +48,42 @@ body {
   margin-bottom: 0px;
   font-family: "Dancing Script", cursive;
   font-size: 437.5%;
-  /* position: fixed; */
 }
 
 h2 {
-  /* background-color: #303841; */
   color: #00adb5;
-  /* font-family: Helvetica, Arial, sans-serif; */
   font-family: "Sarabun", sans-serif;
   font-size: 300%;
-}
-
-.pro {
-  text-decoration: underline;
-}
-
-.topcloud {
-  position: absolute;
-  right: 5%;
-  width: 15%;
-  transform: scale(-1, 1);
-}
-
-.bottomcloud {
-  position: absolute;
-  left: 5%;
-  width: 15%;
-  /* transform: scale(-1,1); */
-  /* display: inline; */
-  /* right: 20%;
-    top: 50px; */
 }
 
 .Header-footer {
   color: #00adb5;
   font-size: 125%;
-  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 .middle-container {
-  /* background-color: #a2d5f2; */
-  /* background-color: #00adb5; */
-  /* font-family: Helvetica, Arial,  sans-serif; */
-  /* background-color: #00adb5; */
   background-color: #eeeeee;
 }
 
 .bottom-container {
-  /* background-color: #303841; */
-  /* font-family: Helvetica, Arial,  sans-serif; */
-  /* background-color: #eeeeee; */
   background-color: #303841;
   padding: 50px 0 20px;
 }
 
-.skills {
-  /* background-color: #fafafa; */
-  /* font-size: 85%; */
-}
-
 .BITSID {
-  /* transform: rotate(-20deg); */
-  /* margin-top: 20px; */
   width: 70%;
-  /* margin: 0; */
-  /* float: right; */
-  /* position: absolute; */
-  /* top: 10%; */
-  /* left: 1%; */
-  /* float: left; */
 }
 
 .Pilani_img {
   width: 35%;
-  /* min-width: 120px; */
-  /* float: left; */
-  /* margin-right: 30px; */
-  /* margin: auto auto auto auto; */
-  /* text-align: center; */
-  /* padding-bottom: 40px; */
-}
-
-.Pilani {
-  /* margin-top:3em; */
 }
 
 h3 {
   color: #07689f;
 }
 
-.AND {
-  font-family: "Dancing Script", cursive;
-}
-
 .date {
   font-family: "Exo", sans-serif;
-  /* margin-left: 2em; */
 }
 
 p {
@@ -274,9 +205,7 @@ a:hover {
     display: block;
     color: #eeeeee;
     text-align: center;
-    /* padding: 14px 16px; */
     text-decoration: none;
-    /* font-size: 17px; */
   }
 
   #burgerbars {
@@ -285,7 +214,6 @@ a:hover {
 
   .exp-desc {
     width: 100%;
-    /* margin: 0 auto; */
   }
 
   .profile {
@@ -297,7 +225,6 @@ a:hover {
   .left-img {
     float: left;
     width: 14em;
-    /* height: 10em; */
     margin-right: 30px;
     margin-bottom: 20px;
   }
@@ -306,7 +233,6 @@ a:hover {
     float: right;
     width: 14em;
     margin-left: 30px;
-    /* display: inline; */
     margin-bottom: 20px;
   }
 
@@ -316,7 +242,6 @@ a:hover {
   }
 
   .drawing {
-    /* width: 600px; */
     width: 70%;
   }
 
