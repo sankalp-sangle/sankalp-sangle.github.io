@@ -4,6 +4,12 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.footerlogo {
+  height: 2.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #00adb5;
@@ -26,6 +32,10 @@ body {
 
 .section {
   display: none;
+}
+
+.section:hover {
+  color:#303841;
 }
 
 #burgerbars {
