@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=800" /> -->
+    <title>Sankalp Sangle | Cisco Work</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @media only screen and (orientation: portrait) {
+            figcaption {
+                font-size: 200%;
+            }
+        }
+
+        body {
+            text-align: center;
+            background-color: black;
+            font-size: large;
+        }
+
+        .imgshown {
+            max-height: 80vh;
+            max-width: 85vw;
+            display: none;
+        }
+
+        .imgcaption {
+            display: none;
+        }
+
+        .imgbr {
+            display: none;
+        }
+
+        .active {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img id="1" class="imgshown active" src="img/ciscowork/1.jpeg">
+        <br id="br1" class="imgbr active">
+        <figcaption id="figcaption1" class="imgcaption active" style="color: white;"> The arrival of the Macbook Pro, which 
+        was rendered totally obsolete a few months later with the arrival of the M1 chips 😂. </figcaption>
+    </figure>
+    <figure>
+        <img id="2" class="imgshown" src="img/ciscowork/2.jpeg">
+        <br id="br2" class="imgbr">
+        <figcaption id="figcaption2" class="imgcaption" style="color: white;"> Your face when you can now use a Macbook Pro instead
+        of your 4 year old Dell laptop. </figcaption>
+    </figure>
+    <figure>
+        <img id="3" class="imgshown" src="img/ciscowork/3.jpeg">
+        <br id="br3" class="imgbr">
+        <figcaption id="figcaption3" class="imgcaption" style="color: white;"> Customary goodies! </figcaption>
+    </figure>
+    <figure>
+        <figure>
+            <img id="4" class="imgshown" src="img/ciscowork/4.jpeg">
+            <br id="br4" class="imgbr">
+            <figcaption id="figcaption4" class="imgcaption" style="color: white;">
+                Work from home making me fat instead of my pockets. 😢
+            </figcaption>
+        </figure>
+        <figure>
+            <figure>
+                <img id="5" class="imgshown" src="img/ciscowork/5.jpg">
+                <br id="br5" class="imgbr">
+                <figcaption id="figcaption5" class="imgcaption" style="color: white;">Cisco was WFH, so I couldn't make many 
+                memories over the year. Nevertheless, this picture taken on my last day, during my farewell, will be very dear to me!
+            </figcaption>
+            </figure>
+
+            <img class="prev" src="img/prev.png" style="display: inline; width: 3em;">
+            <img class="next" src="img/next.png" style="display: inline; width: 3em;">
+            <br>
+            <span class="footernumber" style="color: white;">1/5</span>
+
+
+            <script>
+                var imgno = 1
+                $(document).ready(function () {
+                    $(".next").click(showNext);
+                });
+                $(document).ready(function () {
+                    $(".prev").click(showPrev);
+                });
+                function showNext() {
+                    $("#" + imgno.toString()).attr("class", "imgshown");
+                    $("#br" + imgno.toString()).attr("class", "imgshown");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+                    imgno += 1
+                    if (imgno > 5) {
+                        imgno = 1
+                    }
+
+                    $("#" + imgno.toString()).attr("class", "imgshown active");
+                    $("#br" + imgno.toString()).attr("class", "imgshown active");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+                    $(".footernumber").html(imgno.toString() + "/5");
+                }
+
+                function showPrev() {
+                    $("#" + imgno.toString()).attr("class", "imgshown");
+                    $("#br" + imgno.toString()).attr("class", "imgshown");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+                    imgno -= 1
+                    if (imgno < 1) {
+                        imgno = 5
+                    }
+                    $("#" + imgno.toString()).attr("class", "imgshown active");
+                    $("#br" + imgno.toString()).attr("class", "imgshown active");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+                    $(".footernumber").html(imgno.toString() + "/5");
+                }
+
+                document.addEventListener('keydown', function (event) {
+                    if (event.keyCode === 39) {
+                        showNext();
+                    }
+                    if (event.keyCode === 37) {
+                        showPrev();
+                    }
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=800" /> -->
+    <title>Sankalp Sangle | Georgia Tech</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @media only screen and (orientation: portrait) {
+            figcaption {
+                font-size: 200%;
+            }
+        }
+
+        body {
+            text-align: center;
+            background-color: black;
+            font-size: large;
+        }
+
+        .imgshown {
+            max-height: 85vh;
+            max-width: 85vw;
+            display: none;
+        }
+
+        .imgcaption {
+            display: none;
+        }
+
+        .imgbr {
+            display: none;
+        }
+
+        .active {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 200%;color:white;">Under construction!</p>
+
+            <script>
+                var imgno = 1
+                $(document).ready(function () {
+                    $(".next").click(showNext);
+                });
+                $(document).ready(function () {
+                    $(".prev").click(showPrev);
+                });
+                function showNext() {
+                    $("#" + imgno.toString()).attr("class", "imgshown");
+                    $("#br" + imgno.toString()).attr("class", "imgshown");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+                    imgno += 1
+                    if (imgno > 5) {
+                        imgno = 1
+                    }
+
+                    $("#" + imgno.toString()).attr("class", "imgshown active");
+                    $("#br" + imgno.toString()).attr("class", "imgshown active");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+                    $(".footernumber").html(imgno.toString() + "/5");
+                }
+
+                function showPrev() {
+                    $("#" + imgno.toString()).attr("class", "imgshown");
+                    $("#br" + imgno.toString()).attr("class", "imgshown");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+                    imgno -= 1
+                    if (imgno < 1) {
+                        imgno = 5
+                    }
+                    $("#" + imgno.toString()).attr("class", "imgshown active");
+                    $("#br" + imgno.toString()).attr("class", "imgshown active");
+                    $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+                    $(".footernumber").html(imgno.toString() + "/5");
+                }
+
+                document.addEventListener('keydown', function (event) {
+                    if (event.keyCode === 39) {
+                        showNext();
+                    }
+                    if (event.keyCode === 37) {
+                        showPrev();
+                    }
+                });
+            </script>
+</body>
+
+</html>
