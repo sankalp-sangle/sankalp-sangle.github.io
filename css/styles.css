@@ -8,6 +8,13 @@ body {
   height: 2.25em;
   margin-top: 1em;
   margin-bottom: 1em;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.footerlogo:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
 }
 
 .topnav {
@@ -16,6 +23,7 @@ body {
   position: fixed;
   width: 100%;
   transition: top 0.3s;
+  z-index: 1;
 }
 
 .topnav.responsive #burgerbars {
@@ -101,6 +109,12 @@ p {
   line-height: 2;
 }
 
+.indicator {
+  color: #ff7e67 ;
+  font-family: "Sarabun", sans-serif;
+  font-size: 120%;
+}
+
 hr {
   border: dotted #ff7e67 6px;
   border-bottom: none;
@@ -118,7 +132,7 @@ hr {
   padding: 20px 0;
 }
 
-a {
+.toplink {
   color: #00adb5;
   margin: 2em;
   font-family: "Merriweather", serif;
@@ -188,8 +202,14 @@ a:hover {
 
 .left-img,
 .right-img {
-  width: 40%;
+  width: 55%;
   margin: 0 auto;
+  transform: scale(1);
+  transition: 0.3s;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+   
+  /* box-shadow: 10px 10px; */
+  background-color: #eeeeee;
 }
 
 .experience-row {
@@ -209,6 +229,18 @@ a:hover {
   padding-bottom: 50px;
   margin: 0 auto;
 }
+
+.right-img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.left-img:hover {
+
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
 
 @media only screen and (orientation: landscape) {
   .section {
@@ -238,6 +270,9 @@ a:hover {
     width: 14em;
     margin-right: 30px;
     margin-bottom: 20px;
+    transform: scale(1);
+    transition: 0.3s;
+    background-color: #eeeeee;
   }
 
   .right-img {
@@ -245,6 +280,9 @@ a:hover {
     width: 14em;
     margin-left: 30px;
     margin-bottom: 20px;
+    transform: scale(1);
+    transition: 0.3s;
+    background-color: #eeeeee;
   }
 
   .profile-desc {

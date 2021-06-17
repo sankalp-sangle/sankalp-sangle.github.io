@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=800" /> -->
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            /* position: absolute; */
+            /* margin: 0; */
+            /* width: 100vw; */
+            text-align: center;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img class="imgshown" src="img/singapore/singapore1.jpeg" style="max-height: 90vh; max-width: 99vw;">
+        <figcaption style="color: white;">This is a caption!</figcaption>
+    </figure>
+    
+    
+    <script>
+        var imgno = 1
+        $(document).ready(function() {
+            $(".imgshown").click(showNext);
+        });
+        function showNext() {
+            imgno += 1
+            if(imgno > 16) {
+                imgno = 1
+            }
+            $(".imgshown").attr("src","img/singapore/singapore" + imgno.toString() + ".jpeg");
+
+        }
+    </script>
+</body>
+</html>
