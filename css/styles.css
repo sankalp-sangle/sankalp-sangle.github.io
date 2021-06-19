@@ -73,6 +73,7 @@ h2 {
   color: #00adb5;
   font-family: "Sarabun", sans-serif;
   font-size: 300%;
+  font-weight: 100;
 }
 
 .Header-footer {
@@ -110,10 +111,10 @@ p {
 }
 
 .indicator {
-  color: #ff7e67 ;
-  font-family: "Berkshire Swash", cursive;
+  color:rgb(255, 0, 0);
+  font-family: "Sarabun", sans-serif;
   font-size: 120%;
-
+  font-weight: 700;
 }
 
 hr {
