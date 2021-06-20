@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/svg" href="img/SS.svg"/>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="favicon.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
@@ -45,7 +46,7 @@
       <i class="fa fa-bars"></i>
     </a>
 
-    <h4 style="font-family: 'Abril Fatface', cursive; color:#303841; float:left; font-size:125%; margin-left:2%;">
+    <h4 class="siteheader">
       Sankalp Sangle</h>
   </div>
 
@@ -263,6 +264,14 @@
       }
       prevScrollpos = currentScrollPos;
     }
+
+    function blink() {
+      $('.indicator').fadeOut("slow");
+      $('.indicator').fadeIn("slow");
+      setTimeout(blink, 1000);
+    }
+
+    blink();
 
   </script>
 

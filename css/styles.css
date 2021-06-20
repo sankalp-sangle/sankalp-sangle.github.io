@@ -4,6 +4,15 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.siteheader {
+  font-family: 'Dancing Script', cursive;
+  /* color:#303841; */
+  color: #f8f8f8;
+  float:left;
+  font-size:135%;
+  margin-left:2%;
+}
+
 .footerlogo {
   height: 2.25em;
   margin-top: 1em;
@@ -36,7 +45,7 @@ body {
   float: none;
   display: block;
   text-align: left;
-  color: #eeeeee;
+  color: #f8f8f8;
 }
 
 .section {
@@ -48,7 +57,7 @@ body {
 }
 
 #burgerbars {
-  color: #eeeeee;
+  color: #f8f8f8;
   float: right;
   display: block;
 }
@@ -82,7 +91,7 @@ h2 {
 }
 
 .middle-container {
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
 }
 
 .bottom-container {
@@ -111,7 +120,8 @@ p {
 }
 
 .indicator {
-  color:rgb(255, 0, 0);
+  /* color:rgb(255, 0, 0); */
+  color: #ff7e67;
   font-family: "Sarabun", sans-serif;
   font-size: 120%;
   font-weight: 700;
@@ -129,7 +139,7 @@ hr {
 }
 
 .copyright {
-  color: #eaf6f6;
+  color: #f8f8f8;
   font-size: 0.75rem;
   padding: 20px 0;
 }
@@ -142,7 +152,7 @@ hr {
 }
 
 a:hover {
-  color: #eeeeee;
+  color: #f8f8f8;
 }
 
 .mylink {
@@ -211,7 +221,7 @@ a:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
    
   /* box-shadow: 10px 10px; */
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
 }
 
 .experience-row {
@@ -248,7 +258,7 @@ a:hover {
   .section {
     float: right;
     display: block;
-    color: #eeeeee;
+    color: #f8f8f8;
     text-align: center;
     text-decoration: none;
   }
@@ -274,7 +284,6 @@ a:hover {
     margin-bottom: 20px;
     transform: scale(1);
     transition: 0.3s;
-    background-color: #eeeeee;
   }
 
   .right-img {
@@ -284,7 +293,6 @@ a:hover {
     margin-bottom: 20px;
     transform: scale(1);
     transition: 0.3s;
-    background-color: #eeeeee;
   }
 
   .profile-desc {

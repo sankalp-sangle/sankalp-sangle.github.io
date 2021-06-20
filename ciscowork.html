@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/svg" href="img/SS.svg"/>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- <meta name="viewport" content="width=800" /> -->
     <title>Sankalp Sangle | Cisco Work</title>
@@ -78,8 +79,8 @@
         </figcaption>
     </figure>
 
-    <img class="prev" src="img/prev.png" style="display: inline; width: 3em;">
-    <img class="next" src="img/next.png" style="display: inline; width: 3em;">
+    <img class="prev" src="img/prev.png" style="display: inline; width: 6em;">
+    <img class="next" src="img/next.png" style="display: inline; width: 6em;">
     <br>
     <span class="footernumber" style="color: white;">1/5</span>
 
@@ -93,6 +94,7 @@
             $(".prev").click(showPrev);
         });
         function showNext() {
+            $(".next").fadeOut("fast");
             $("#" + imgno.toString()).attr("class", "imgshown");
             $("#br" + imgno.toString()).attr("class", "imgshown");
             $("#figcaption" + imgno.toString()).attr("class", "imgshown");
@@ -105,9 +107,11 @@
             $("#br" + imgno.toString()).attr("class", "imgshown active");
             $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
             $(".footernumber").html(imgno.toString() + "/5");
+            $(".next").fadeIn("fast");
         }
 
         function showPrev() {
+            $(".prev").fadeOut("fast");
             $("#" + imgno.toString()).attr("class", "imgshown");
             $("#br" + imgno.toString()).attr("class", "imgshown");
             $("#figcaption" + imgno.toString()).attr("class", "imgshown");
@@ -119,6 +123,7 @@
             $("#br" + imgno.toString()).attr("class", "imgshown active");
             $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
             $(".footernumber").html(imgno.toString() + "/5");
+            $(".prev").fadeIn("fast");
         }
 
         document.addEventListener('keydown', function (event) {
