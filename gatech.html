@@ -42,15 +42,80 @@
 
 <body>
     <figure>
-        <img id="1" class="imgshown active" src="img/gatech/GT.jpg">
+        <img id="1" class="imgshown active" src="img/gatech/1.jpeg">
         <br id="br1" class="imgbr active">
-        <figcaption id="figcaption1" class="imgcaption active" style="color: white;">Did you come here looking for pics already? I'll join Georgia Tech in August! Come visit this page after that! 😄</figcaption>
+        <figcaption id="figcaption1" class="imgcaption active" style="color: white;"> My first meal in America! Schezwan chicken dumplings 😋</figcaption>
+      </figure>
+      <figure>
+        <img id="2" class="imgshown" src="img/gatech/2.jpeg">
+        <br id="br2" class="imgbr">
+        <figcaption id="figcaption2" class="imgcaption" style="color: white;"> Campus exploration on the first day out!</figcaption>
+      </figure>
+      <figure>
+        <img id="3" class="imgshown" src="img/gatech/3.jpeg">
+        <br id="br3" class="imgbr">
+        <figcaption id="figcaption3" class="imgcaption" style="color: white;"> Standing next to the Klaus Advanced Computing building!</figcaption>
+      </figure>
+      <figure>
+        <img id="4" class="imgshown" src="img/gatech/4.jpeg">
+        <br id="br4" class="imgbr">
+        <figcaption id="figcaption4" class="imgcaption" style="color: white;"> The campus isn't exactly small. These buses are a huge help!</figcaption>
+      </figure>
+      <figure>
+        <img id="5" class="imgshown" src="img/gatech/5.jpeg">
+        <br id="br5" class="imgbr">
+        <figcaption id="figcaption5" class="imgcaption" style="color: white;"> At the Swag Shop (Barnes&Nobles) at Tech Square!</figcaption>
+      </figure>
+      <figure>
+        <img id="6" class="imgshown" src="img/gatech/6.jpeg">
+        <br id="br6" class="imgbr">
+        <figcaption id="figcaption6" class="imgcaption" style="color: white;"> One word. Ooooof. </figcaption>
+      </figure>
+      <figure>
+        <img id="7" class="imgshown" src="img/gatech/7.jpeg">
+        <br id="br7" class="imgbr">
+        <figcaption id="figcaption7" class="imgcaption" style="color: white;"> The Atlanta Midtown skyline at night. Hope to get better pictures soon!</figcaption>
+      </figure>
+      <figure>
+        <img id="8" class="imgshown" src="img/gatech/8.jpeg">
+        <br id="br8" class="imgbr">
+        <figcaption id="figcaption8" class="imgcaption" style="color: white;"> The road not taken? </figcaption>
+      </figure>
+      <figure>
+        <img id="9" class="imgshown" src="img/gatech/9.jpeg">
+        <br id="br9" class="imgbr">
+        <figcaption id="figcaption9" class="imgcaption" style="color: white;"> Wouldn't be appropriate if I didn't royally mess up my college ID photo. Some things don't change even in graduate school.</figcaption>
+      </figure>
+      <figure>
+        <img id="10" class="imgshown" src="img/gatech/10.jpeg">
+        <br id="br10" class="imgbr">
+        <figcaption id="figcaption10" class="imgcaption" style="color: white;"> This was a pleasant surprise, I love the concept!</figcaption>
+      </figure>
+      <figure>
+        <img id="11" class="imgshown" src="img/gatech/11.jpeg">
+        <br id="br11" class="imgbr">
+        <figcaption id="figcaption11" class="imgcaption" style="color: white;"> Pepsi Mango flavour. 🤦🏻‍♂️</figcaption>
+      </figure>
+      <figure>
+        <img id="12" class="imgshown" src="img/gatech/12.jpeg">
+        <br id="br12" class="imgbr">
+        <figcaption id="figcaption12" class="imgcaption" style="color: white;"> Met Abhro and Parth, my friends from JEE coaching (high school), after a period of 5 years!</figcaption>
+      </figure>
+      <figure>
+        <img id="13" class="imgshown" src="img/gatech/13.jpeg">
+        <br id="br13" class="imgbr">
+        <figcaption id="figcaption13" class="imgcaption" style="color: white;"> Research wing at Klaus. Picturesque doesn't do this justice. </figcaption>
+      </figure>
+      <figure>
+        <img id="14" class="imgshown" src="img/gatech/14.jpeg">
+        <br id="br14" class="imgbr">
+        <figcaption id="figcaption14" class="imgcaption" style="color: white;"> Grad school is ridiculously hectic. But I'm loving it! Hope to fill this space with more pictures soon!</figcaption>
       </figure>
 
       <img class="prev" src="img/prev.png" style="display: inline; width: 6em;">
     <img class="next" src="img/next.png" style="display: inline; width: 6em;">
     <br>
-    <span class="footernumber" style="color: white;">1/1</span>
+    <span class="footernumber" style="color: white;">1/14</span>
 
             <script>
                 var imgno = 1
@@ -66,14 +131,14 @@
                     $("#br" + imgno.toString()).attr("class", "imgshown");
                     $("#figcaption" + imgno.toString()).attr("class", "imgshown");
                     imgno += 1
-                    if (imgno > 1) {
+                    if (imgno > 14) {
                         imgno = 1
                     }
 
                     $("#" + imgno.toString()).attr("class", "imgshown active");
                     $("#br" + imgno.toString()).attr("class", "imgshown active");
                     $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
-                    $(".footernumber").html(imgno.toString() + "/1");
+                    $(".footernumber").html(imgno.toString() + "/14");
                     $(".next").fadeIn("fast");
                 }
 
@@ -84,12 +149,12 @@
                     $("#figcaption" + imgno.toString()).attr("class", "imgshown");
                     imgno -= 1
                     if (imgno < 1) {
-                        imgno = 1
+                        imgno = 14
                     }
                     $("#" + imgno.toString()).attr("class", "imgshown active");
                     $("#br" + imgno.toString()).attr("class", "imgshown active");
                     $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
-                    $(".footernumber").html(imgno.toString() + "/1");
+                    $(".footernumber").html(imgno.toString() + "/14");
                     $(".prev").fadeIn("fast");
                 }
 
