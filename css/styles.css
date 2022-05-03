@@ -154,6 +154,10 @@ a:hover {
   color: #f8f8f8;
 }
 
+.lastupdated {
+  color: #00adb5;
+}
+
 .mylink {
   margin: 0;
   color: #00adb5;

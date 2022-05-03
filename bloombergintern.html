@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="img/SS.png"/>
+  <title>Sankalp Sangle | Cisco Internship</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    @media only screen and (orientation: portrait) {
+      figcaption {
+        font-size: 200%;
+      }
+    }
+
+    body {
+      text-align: center;
+      background-color: black;
+      font-size: large;
+    }
+
+    .imgshown {
+      max-height: 80vh;
+      max-width: 85vw;
+      display: none;
+    }
+
+    .imgcaption {
+      display: none;
+    }
+
+    .imgbr {
+      display: none;
+    }
+
+    .active {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <figure>
+    <!-- <img id="1" class="imgshown active" src="img/ciscointern/1.jpeg"> -->
+    <br id="br1" class="imgbr active">
+    <figcaption id="figcaption1" class="imgcaption active" style="color: white;">Pics soon!</figcaption>
+  </figure>
+
+  <img class="prev" src="img/prev.png" style="display: inline; width: 6em;">
+  <img class="next" src="img/next.png" style="display: inline; width: 6em;">
+  <br>
+  <span class="footernumber" style="color: white;">1/1</span>
+
+
+  <script>
+    var imgno = 1
+    $(document).ready(function () {
+      $(".next").click(showNext);
+    });
+    $(document).ready(function () {
+      $(".prev").click(showPrev);
+    });
+    function showNext() {
+      $(".next").fadeOut("fast");
+      $("#" + imgno.toString()).attr("class", "imgshown");
+      $("#br" + imgno.toString()).attr("class", "imgshown");
+      $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+      imgno += 1
+      if (imgno > 1) {
+        imgno = 1
+      }
+
+      $("#" + imgno.toString()).attr("class", "imgshown active");
+      $("#br" + imgno.toString()).attr("class", "imgshown active");
+      $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+      $(".footernumber").html(imgno.toString() + "/1");
+      $(".next").fadeIn("fast");
+    }
+
+    function showPrev() {
+      $(".prev").fadeOut("fast");
+      $("#" + imgno.toString()).attr("class", "imgshown");
+      $("#br" + imgno.toString()).attr("class", "imgshown");
+      $("#figcaption" + imgno.toString()).attr("class", "imgshown");
+      imgno -= 1
+      if (imgno < 1) {
+        imgno = 1
+      }
+      $("#" + imgno.toString()).attr("class", "imgshown active");
+      $("#br" + imgno.toString()).attr("class", "imgshown active");
+      $("#figcaption" + imgno.toString()).attr("class", "imgshown active");
+      $(".footernumber").html(imgno.toString() + "/1");
+      $(".prev").fadeIn("fast");
+    }
+
+    document.addEventListener('keydown', function (event) {
+      if (event.keyCode === 39) {
+        showNext();
+      }
+      if (event.keyCode === 37) {
+        showPrev();
+      }
+    });
+  </script>
+</body>
+
+</html>
